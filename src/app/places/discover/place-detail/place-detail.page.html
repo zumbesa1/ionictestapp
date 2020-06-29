@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!--wenn man Ionic mit Angular braucht um eine Seite zurückzunavigieren, 
+        Weil die App nicht weiss was davor kommt(in cose of,it the user refresh the page,) then we use
+        defaultHref, But when we use Ionic with Vanilla JS then it works with default-href--->
+      <ion-back-button defaultHref="/places/tabs/discover"> 
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>{{place.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button color="primary" margin (click) ="onBookPlace()">Book</ion-button>
+</ion-content>
